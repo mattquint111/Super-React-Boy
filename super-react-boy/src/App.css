@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+* {
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainCont {
+  background: #777;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.gameConsole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #eee;
+  height: 95vh;
+  width: 50%;
+  border-radius: 10px 10px 60px 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.headerCont {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 600px;
+  height: 15px;
+  z-index: 3;
+  top: 82px;
+}
+
+.colorBarsLeft {
+  border-top: 5px solid #8b1d90;
+  border-bottom: 5px solid #283593;
+  height: 100%;
+  width: 200px;
+}
+
+.headerText {
+  color: #b3b3b3;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.colorBarsRight {
+  border-top: 5px solid #8b1d90;
+  border-bottom: 5px solid #283593;
+  height: 100%;
+  width: 100px;
+}
+
+.outerScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  background: #777;
+  border-radius: 13px 13px 50px 13px;
+  width: 85%;
+  height: 60vh;
+}
+
+.batteryCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -30px;
+  margin-top: -100px;
+}
+
+.power {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #b98181;
+}
+.powerText {
+  color: #b3b3b3;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.innerScreen {
+  background: #bdae58;
+  width: 85%;
+  height: 50vh;
+  margin-left: 5px;
+  box-shadow: inset 5px 5px rgba(0, 0, 0, 0.15)
+}
+
+.controlsCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px; 
+}
+
+.directionCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: 55px;
+}
+
+.directionPad {
+  color: #444;
+  font-size: 17em;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.buttonCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  width: 225px;
+  height: 100px;
+  border-radius: 70px;
+  margin-right: 55px;
+  transform: rotate(-25deg);
+  background: #dfdfdf;
+}
+
+.gameButton-X {
+  border-radius: 100%;
+  background: #a93671;
+  width: 80px;
+  height: 80px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.gameButton-Y {
+  border-radius: 100%;
+  background: #a93671;
+  width: 80px;
+  height: 80px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* ============MOBILE============ */
+@media (max-width: 375px) {
+  .gameConsole {
+    height: 95vh;
+    width: 355px;
   }
 }
