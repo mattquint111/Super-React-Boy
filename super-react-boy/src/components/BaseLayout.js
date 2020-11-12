@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../App.css' 
-import Menu from "./Menu";
+
 
 function BaseLayout(props) {
     return (
