@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useHistory } from 'react'
+import { NavLink } from 'react-router-dom'
 
 function App() {
 
   return (
     <div className='homepageMainCont'>
       <h1 className="homepageTitle pretendo">Super-React-Boy <sub className="trademark">TM</sub></h1>
-      <button className="startBtn btn">Click to start</button>
+      <NavLink to='/game-select' className="startBtn btn">CLICK TO START</NavLink>
     </div>
   )
 

@@ -212,8 +212,77 @@
   font-size: .3em;
 }
 
+.startBtn {
+  font-size: 1.5em;
+  text-decoration: none;
+}
 
+/* =========Game Select========= */
+.gameSelectCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 56vh;
+  width: 100%;
+}
 
+gameCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 56vh;
+  width: 100%;
+}
+
+.selectTitle {
+  margin-top: 30px;
+  border-bottom: 3px solid;
+}
+
+.gamesCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 5px solid;
+  width: 97%;
+  height: 80%;
+}
+
+.gameTitle {
+  font-size: 1.5em;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
+
+.gameIcon {
+  background: none;
+  outline: none;
+  border: 3px solid;
+  color: #676516;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+}
+.gameIcon:hover {
+  background: #676516;
+  color: #bdae58;
+  border: 3px #676516;
+}
+
+.rpsIcons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rpsIcon {
+  font-size: 4em;
+  padding: 2px;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
 
 
 
