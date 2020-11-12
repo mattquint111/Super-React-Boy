@@ -30,7 +30,7 @@
   width: 600px;
   height: 15px;
   z-index: 3;
-  top: 82px;
+  top: 120px;
 }
 
 .colorBarsLeft {
@@ -87,7 +87,11 @@
 }
 
 .innerScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #bdae58;
+  color: #676516;
   width: 85%;
   height: 50vh;
   margin-left: 5px;
