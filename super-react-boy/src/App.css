@@ -470,6 +470,10 @@
   transform: scaleX(-1) rotate(90deg); 
 }
 
+.flip-horz {
+  transform: scaleX(-1) rotate(90deg);
+}
+
 .gameChoiceCont {
   display: flex;
   border: 2px solid;

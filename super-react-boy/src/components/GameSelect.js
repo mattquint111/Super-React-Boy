@@ -15,7 +15,7 @@ function GameSelect() {
                     <div className='rpsIcons'>
                         <i class="rpsIcon far fa-hand-rock"></i>
                         <i class="rpsIcon far fa-hand-paper"></i>
-                        <i class="rpsIcon far fa-hand-scissors rotate90"></i>
+                        <i class="rpsIcon far fa-hand-scissors flip-horz"></i>
                     </div>
                     
                 </NavLink>
