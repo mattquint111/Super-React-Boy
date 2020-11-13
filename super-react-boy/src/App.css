@@ -276,11 +276,16 @@
   cursor: pointer;
   padding: 10px;
   text-decoration: none;
+  margin: 10px;
 }
 .gameIcon:hover {
   background: #676516;
   color: #bdae58;
   border: 3px #676516;
+}
+
+.gameTitle {
+  text-align: center;
 }
 
 .rpsIcons {
@@ -313,7 +318,7 @@
   border: 3px solid #676516;
 }
 
-/* ======RPS====== */
+/* =========RPS========= */
 .gameHeader {
   display: flex;
   align-content: baseline;
@@ -519,6 +524,28 @@
   transform: rotate(0);
 }
 
+
+/* =========TIC TACT TOE========= */
+.squareCont {
+  background: #bdae58;
+  color: #676516;
+  border: 3px solid #676516;
+  font-size: 4em;
+  padding: 25px; 
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+}
+
+.boardCont {
+  border: 5px solid #676516;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
 
 
 /* ============MOBILE============ */
