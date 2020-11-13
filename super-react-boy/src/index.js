@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import BaseLayout from './components/BaseLayout'
 import GameSelect from './components/GameSelect'
 import RPSHome from './components/RPSHome'
+import RPSGame from './components/RPSGame'
 
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
           <Route component = {App} path="/" exact/>
           <Route component = {GameSelect} path='/game-select' />
           <Route component = {RPSHome} path='/rps-home' />
+          <Route component = {RPSGame} path='/rps-game/:player' />
         </Switch>
       </BaseLayout>
     </BrowserRouter>

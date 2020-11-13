@@ -11,7 +11,7 @@ function GameSelect() {
 
 
                 <NavLink to='/rps-home' className='gameIcon'>
-                    <h2 className='gameTitle'>Rock-Paper-Scissors</h2>
+                    <h2 className='gameTitle'>Rock Paper Scissors</h2>
                     <div className='rpsIcons'>
                         <i class="rpsIcon far fa-hand-rock"></i>
                         <i class="rpsIcon far fa-hand-paper"></i>

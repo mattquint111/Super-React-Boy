@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .gameConsole {
@@ -226,7 +227,7 @@
   width: 100%;
 }
 
-gameCont {
+.gameCont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,6 +276,8 @@ gameCont {
   justify-content: space-evenly;
 }
 
+
+
 .rpsIcon {
   font-size: 4em;
   padding: 2px;
@@ -284,8 +287,221 @@ gameCont {
   transform: rotate(90deg);
 }
 
+.goToSelect {
+  margin-left: 20px;
+  font-size: 2.5em;
+  color: #676516;
+  border: 3px solid;
+  padding: 5px 30px;
+  border-radius: 50px;
+}
+.goToSelect:hover {
+  background: #676516;
+  color: #bdae58;
+  border: 3px solid #676516;
+}
 
+/* ======RPS====== */
+.gameHeader {
+  display: flex;
+  align-content: baseline;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 75px;
+  width: 100%;
+}
 
+.rpsTitle {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.playerNameInput {
+  text-align: center;
+  font-size: 1.7em;
+  background: none;
+  color: #676516;
+  outline: none;
+  padding: 5px;
+  border: 3px solid #676516;
+  border-radius: 8px;
+}
+::placeholder {
+  color: #676516;
+}
+
+.startGame {
+  margin-top: 50px;
+  font-size: 1.5em;
+  border: 3px solid;
+  padding: 5px 30px;
+  border-radius: 50px;
+  color: #676516;
+  padding: 10px;
+  text-decoration: none;
+}
+.startGame:hover {
+  background: #676516;
+  color: #bdae58;
+  border: 3px solid #676516;
+}
+
+.goToHome {
+  margin-left: 20px;
+  font-size: 2.5em;
+  color: #676516;
+  border: 3px solid;
+  padding: 5px 30px;
+  border-radius: 50px;
+}
+.goToHome:hover {
+  background: #676516;
+  color: #bdae58;
+  border: 3px solid #676516;
+}
+
+.easterEgg {
+  font-size: 2.5em;
+  border: 3px solid;
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  color: #bdae58;
+  cursor: pointer;
+}
+.easterEgg:hover {
+  color: #676516;
+}
+
+.gameplayCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.gameplayHeader {
+  display: flex;
+  align-content: baseline;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.round {
+  border: 2px solid;
+  padding: 5px;
+}
+
+.scoresCont {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin-top: 10px;
+}
+
+.scoreCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameResultCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerResultCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.playerChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choiceIconCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 162px;
+  width: 162px;
+  border: 5px solid;
+  border-radius: 100%;
+}
+
+.playerChoiceIcon {
+
+  padding: 20px;
+  font-size: 7em;
+
+  margin-bottom: 10px;
+}
+
+.computerIcon {
+  transform: scaleX(-1) rotate(90deg); 
+}
+
+.gameChoiceCont {
+  display: flex;
+  border: 2px solid;
+  margin-top: 10px;
+  width: 20%;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.gameChoiceBtn {
+  cursor: pointer;
+}
+.gameChoiceBtn:hover {
+  color: #807e1a;
+}
+
+.middleCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultTitle {
+  margin-bottom: 5px;
+}
+
+.outerResult {
+  padding: 5px;
+  border: 3px double;
+}
+
+.result {
+  border: 3px double;
+  padding: 20px;
+  width: 133.13px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deadComputer {
+  transform: rotate(0);
+}
 
 
 

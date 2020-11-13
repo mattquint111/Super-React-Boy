@@ -1,11 +1,26 @@
 import React, { useState, useEffect, useHistory } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function RPSHome() {
 
+  const [playerName, setPlayerName] = useState('')
+
+  const handleChange = (e) => {
+    setPlayerName(e.target.value)
+  }
+
+
   return (
     <div className="gameCont">
-       <h1>RPS-HOME</h1>
+        <div className="gameHeader">
+          <Link to='game-select'><i class="fas fa-angle-double-left goToSelect"></i></Link>
+          <h1 className='pretendo rpsTitle'>ROCK PAPER SCISSORS</h1>
+          <div><i class="fas fa-bomb easterEgg hidden"></i></div>
+        </div>
+
+        <input onChange={handleChange} name='playerNameInput' className='playerNameInput' type='text' autocomplete="off" placeholder='Enter Player Name...'></input>
+        <Link to={"/rps-game/" + playerName} className='startGame'>Start Game</Link>
+       
     </div>
   )
 
