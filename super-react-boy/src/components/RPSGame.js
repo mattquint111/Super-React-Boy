@@ -45,8 +45,6 @@ function RPSGame(props) {
     }
 
     const daBomb = (e) => {
-        console.log("ALWAYS WIN")
-
         setPlayerChoice({
             playerChoice: "fas fa-bomb fa-rotate-270",
             computerChoice: "far fa-dizzy deadComputer"
@@ -58,7 +56,6 @@ function RPSGame(props) {
                 wins: game.wins + 1,
                 result: 'WIN!!!'
             })
-        
     }
 
   function playerWins() {

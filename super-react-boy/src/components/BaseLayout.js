@@ -38,6 +38,8 @@ function BaseLayout(props) {
                             <button className="gameButton-Y"></button>
                         </div>
                     </div>
+
+                    <div className="startSelectCont"></div>
                 </div>
             </div>
 

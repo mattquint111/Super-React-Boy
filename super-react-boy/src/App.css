@@ -171,6 +171,18 @@
   margin-right: 10px;
 }
 
+.startSelectCont {
+  background: #999;
+  height: 15px;
+  width: 80px;
+  transform: rotate(-25deg);
+  box-shadow: 57px 27px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf;
+  border-radius: 10px;
+  position: absolute;
+  top: 900px;
+  right: 980px;
+}
+
 .homepageMainCont {
   height: 100%;
   width: 100%;
