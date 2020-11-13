@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useHistory } from 'react'
 import { Link } from 'react-router-dom'
+import { secretKiwi } from './secretKiwi'
+
 
 function RPSHome() {
 
@@ -17,7 +19,8 @@ function RPSHome() {
           <h1 className='pretendo rpsTitle'>ROCK PAPER SCISSORS</h1>
           <div><i class="fas fa-bomb easterEgg hidden"></i></div>
         </div>
-
+        
+        <i onClick={secretKiwi} className="rpsHomeSecretKiwi fas fa-kiwi-bird"></i>
         <input onChange={handleChange} name='playerNameInput' className='playerNameInput' type='text' autocomplete="off" placeholder='Enter Player Name...'></input>
         <Link to={"/rps-game/" + playerName} className='startGame'>Start Game</Link>
        

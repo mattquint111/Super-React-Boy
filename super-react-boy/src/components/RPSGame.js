@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useHistory } from 'react'
 import { Link } from 'react-router-dom'
+import { secretKiwi } from './secretKiwi'
+
 
 function RPSGame(props) {
 
@@ -117,6 +119,7 @@ function RPSGame(props) {
 
                     <div className="middleCont">
                         <h1 className="resultTitle">Result</h1>
+                        <i onClick={secretKiwi} class="fas fa-kiwi-bird rpsSecretKiwi"></i>
                         <div className="outerResult">
                             <div className="result">
                             <h1>{game.result}</h1>

@@ -601,6 +601,26 @@ tttTitle {
   width: 250px;
 }
 
+.rpsHomeSecretKiwi {
+  cursor: pointer;
+  color: #bdae58;
+  position: relative;
+  left: 162px;
+  top: 30px;
+  transform: scaleX(-1) rotate(-90deg);
+}
+.rpsHomeSecretKiwi:hover {
+  color: #676516;
+}
+
+.rpsSecretKiwi {
+  cursor: pointer;
+  color: #bdae58;
+}
+.rpsSecretKiwi:hover {
+  color: #676516;
+}
+
 .moveToBtn {
   background: none;
   color: #676516;
