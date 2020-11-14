@@ -29,17 +29,25 @@ function BaseLayout(props) {
                     </div>
 
                     <div className="controlsCont">
-                        <div className="directionCont">
-                            <h1 className="directionPad">+</h1>
+
+                        <div className="controlsTop">
+                            <div className="directionCont">
+                                <h1 className="directionPad">+</h1>
+                            </div>
+
+                            <div className="buttonCont">
+                                <button className="gameButton-X"></button>
+                                <button className="gameButton-Y"></button>
+                            </div>
                         </div>
 
-                        <div className="buttonCont">
-                            <button className="gameButton-X"></button>
-                            <button className="gameButton-Y"></button>
+                        <div className="controlsBottom">
+                            <div className="startSelectCont"></div>
                         </div>
+                        
                     </div>
 
-                    <div className="startSelectCont"></div>
+                    
                 </div>
             </div>
 
