@@ -804,7 +804,7 @@ tttTitle {
   }
 
   .rpsTitle {
-    font-size: 1em;
+    font-size: .8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -827,5 +827,59 @@ tttTitle {
   .startGame {
     font-size: 1em;
   }
+
+  .goToHome {
+    font-size: 1em;
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+
+  .easterEgg {
+    margin-right: 0;
+  }
+
+  .playerChoiceIcon {
+    font-size: 3em;
+  }
+
+  .choiceIconCont {
+    width: 75px;
+    height: 75px;
+    margin: 20px;
+  }
+
+  .playerName {
+    font-size: 1em;
+  }
+
+  .result {
+    width: 75px;
+    height: 40px;
+    font-size: .5em;
+    padding: 10px;
+  }
+
+  .gameChoiceCont {
+    font-size: 1em;
+    width: auto;
+  }
+
+  .rpsIcon {
+    font-size: 3em;
+  }
+
+  .gameChoiceTitle {
+    font-size: .8em;
+  }
+
+  .resultTitle {
+    font-size: 1.5em;
+  }
+
+  .playerResultCont {
+    width: auto;
+  }
+
+
 
 }
