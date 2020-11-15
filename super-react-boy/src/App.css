@@ -678,6 +678,15 @@ tttTitle {
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
+/* ===============SNAKE=============== */
+.blankSquare {
+  background: none;
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  border: 2px solid #676516;
+}
+
 
 /* ============MOBILE============ */
 @media (max-width: 375px) {

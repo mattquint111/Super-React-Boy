@@ -9,6 +9,7 @@ import GameSelect from './components/GameSelect'
 import RPSHome from './components/RPSHome'
 import RPSGame from './components/RPSGame'
 import TicTacToeApp from './components/TicTacToeApp';
+import SnakeApp from './components/SnakeApp'
 
 
 ReactDOM.render(
@@ -21,6 +22,7 @@ ReactDOM.render(
           <Route component = {RPSHome} path='/rps-home' />
           <Route component = {RPSGame} path='/rps-game/:player' />
           <Route component = {TicTacToeApp} path='/tic-tac-toe' />
+          <Route component = {SnakeApp} path="/snake" />
         </Switch>
       </BaseLayout>
     </BrowserRouter>
