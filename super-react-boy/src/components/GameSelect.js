@@ -2,6 +2,7 @@ import React, { useState, useEffect, useHistory } from 'react'
 import { Link } from 'react-router-dom'
 import tictactoe from '../images/tictactoe.png'
 import snake from '../images/snake.png'
+import hangman from '../images/hangman.png'
 
 function GameSelect() {
 
@@ -34,6 +35,14 @@ function GameSelect() {
                     <h2 className='gameTitle'>Snake</h2>
                     <div className='gameImgCont'>
                         <img className="snakeImg" src={snake} />
+                    </div>
+                    <h2 className="playerNumber">(1 PLAYER)</h2>
+                </Link>
+
+                <Link to='/hangman' className='gameIcon'>
+                    <h2 className='gameTitle'>Hangman</h2>
+                    <div className='gameImgCont'>
+                        <img className="snakeImg" src={hangman} />
                     </div>
                     <h2 className="playerNumber">(1 PLAYER)</h2>
                 </Link>
