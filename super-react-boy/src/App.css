@@ -679,12 +679,8 @@ tttTitle {
 }
 
 /* ===============SNAKE=============== */
-.blankSquare {
-  background: none;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  border: 2px solid #676516;
+.snakeCanvas {
+  border: 1px solid black;
 }
 
 
