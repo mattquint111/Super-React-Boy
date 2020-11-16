@@ -11,7 +11,7 @@ const TicTacToeApp = () => {
             <div className="gameHeader tttHeader">
                 <Link to='game-select'><i class="fas fa-angle-double-left goToSelect"></i></Link>
                 <h1 className='pretendo tttTitle'>TIC TAC TOE</h1>
-                <i class="fas fa-angle-double-left goToSelect hidden"></i>
+                <i class="fas fa-angle-double-left goToSelect hidden mobileHidden"></i>
             </div>
 
             <Game />

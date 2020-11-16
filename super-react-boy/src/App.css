@@ -860,10 +860,11 @@ tttTitle {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
+    padding-top: 120px;
   }
 
   .gameCont {
-
     height: 100%;
   }
 
@@ -954,6 +955,72 @@ tttTitle {
   .playerResultCont {
     width: auto;
   }
+
+  .tttTitle {
+    font-size: 1em;
+  }
+
+  .tictactoeCont {
+    width: 308px;
+  }
+
+  .boardCont {
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .squareCont {
+    font-size: 2em;
+    padding: 5px;
+  }
+
+  .tttHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+
+  .tttTitle {
+    margin-right: 55px;
+    text-align: center;
+  }
+
+  .movesCont {
+    display: flex;
+    flex-direction: row;
+    font-size: .5em;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .tttGameCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .winnerCont {
+    font-size: 1em;
+    width: 150px;
+    height: auto;
+    margin: 0;
+  }
+
+  .listItemCont {
+    font-size: .8em;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .tttSecretKiwi {
+    display: none;
+  }
+
 
 
 
