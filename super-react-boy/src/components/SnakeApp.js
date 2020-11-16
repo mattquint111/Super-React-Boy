@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import UseInterval from './snakeComponents/UseInterval'
 import {
     CANVAS_SIZE,
@@ -8,6 +9,7 @@ import {
     SPEED,
     DIRECTIONS
 } from './snakeComponents/constants'
+import { secretKiwi } from './secretKiwi'
 
 function SnakeApp() {
 
@@ -88,15 +90,43 @@ function SnakeApp() {
 
     return (
 
-        <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
-            <canvas
-                className="snakeCanvas"
-                ref={canvasRef}
-                width={`${CANVAS_SIZE[0]}px`}
-                height={`${CANVAS_SIZE[1]}px`}
-            />
-            {gameOver && <div>GAME OVER!</div>}
-            <button onClick={startGame}>Start Game</button>
+        <div className="snakeGameCont" role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
+
+            <Link to='game-select'><i class="fas fa-angle-double-left goToSelect"></i></Link>
+
+            <div className='snakeStartBtnCont'>
+                <h1 className="pretendo snakeTitle">SNAKE</h1>
+                <button className="snakeStartBtn" onClick={startGame}>Start Game</button>
+                <div className="gameOverCont">
+                    {gameOver && <div>GAME OVER!</div>}
+                </div>
+            </div>
+            
+            
+            <div className='snakeCanvasCont'>
+                <canvas
+                    className="snakeCanvas"
+                    ref={canvasRef}
+                    width={`${CANVAS_SIZE[0]}px`}
+                    height={`${CANVAS_SIZE[1]}px`}
+                />
+
+            </div>
+            
+            
+
+            <div className="snakeRulesCont">
+                <h1 className="snakeRulesTitle">RULES</h1>
+                
+                <ul className="rulesContent">
+                    <li><h4>Use the arrow keys to maneuver snake</h4></li>
+                    <li><h4>Eat the dot to grow bigger</h4></li>
+                    <li><h4>Don't crash into the walls or yourself or you die</h4></li>
+                </ul>
+                <i onClick={secretKiwi} className="snakeSecretKiwi fas fa-kiwi-bird"></i>
+            </div>
+            
+            
         </div>
         
     )

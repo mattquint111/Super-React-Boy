@@ -309,7 +309,11 @@
 
 .tttImg {
   height: 70px;
+}
 
+.snakeImg {
+  height: 70px;
+  width: 100px;
 }
 
 .gameTitle {
@@ -679,10 +683,76 @@ tttTitle {
 }
 
 /* ===============SNAKE=============== */
-.snakeCanvas {
-  border: 1px solid black;
+.snakeGameCont {
+  display: flex;
+  width: 100%;
+
 }
 
+.snakeCanvas {
+  border: 3px solid #676516;
+}
+
+.snakeStartBtnCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right: 90px;
+}
+
+.snakeTitle {
+  font-size: 3.5em;
+  margin-bottom: 50px;
+}
+
+.snakeStartBtn {
+  font-size: 1.5em;
+  background: none;
+  color: #676516;
+  border: 3px solid #676516;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.snakeStartBtn:hover {
+  background: #676516;
+  border: 3px solid #676516;
+  color: #bdae58;
+}
+
+.gameOverCont {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.snakeRulesCont {
+  margin-left: 150px;
+  margin-right: 20px;
+}
+
+.snakeRulesTitle {
+  text-align: center;
+  border-bottom: 2px solid #676516;
+  margin-bottom: 10px;
+}
+
+.rulesContent li {
+  margin: 10px;
+}
+
+.snakeSecretKiwi {
+  transform: scaleX(-1) rotate(270deg);
+  margin-top: 150px;
+  margin-left: -152px;
+  cursor: pointer;
+  color: #bdae58;
+}
+.snakeSecretKiwi:hover {
+  color: #676516;
+}
 
 /* ============MOBILE============ */
 @media (max-width: 375px) {
