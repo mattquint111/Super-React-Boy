@@ -781,6 +781,11 @@ tttTitle {
   padding: 5px;
 }
 
+.hangmanInst {
+  font-size: 1.2em;
+  
+}
+
 .game-container {
   padding: 20px 30px;
   position: relative;

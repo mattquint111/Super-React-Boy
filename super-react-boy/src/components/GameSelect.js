@@ -11,8 +11,6 @@ function GameSelect() {
         <h1 className="selectTitle pretendo">Select a Game</h1>
 
         <div className='gamesCont'>
-
-
                 <Link to='/rps-home' className='gameIcon'>
                     <h2 className='gameTitle'>Rock Paper Scissors</h2>
                     <div className='rpsIcons gameImg'>
