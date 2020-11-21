@@ -258,19 +258,29 @@
 
 /* =========Game Select========= */
 .gameSelectCont {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   height: 56vh;
+  width: 100%; */
+  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 .gameCont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 56vh;
+  height: 100%;
   width: 100%;
+  overflow: scroll;
+}
+.gameCont::-webkit-scrollbar { 
+  display: none;
 }
 
 .selectTitle {
@@ -289,7 +299,7 @@
 }
 
 .gameTitle {
-  font-size: 1.5em;
+  font-size: 1.em;
   border-bottom: 2px solid;
   margin-bottom: 10px;
 }
@@ -311,9 +321,9 @@
   cursor: pointer;
   padding: 10px;
   text-decoration: none;
-  margin: 10px;
-  height: 150px;
-  width: 275px;
+  margin: 8px;
+  height: 165px;
+  width: 250px;
 }
 .gameIcon:hover {
   background: #676516;
@@ -332,17 +342,20 @@
 
 .gameTitle {
   text-align: center;
+  margin-top: 5px;
+  font-size: 1.4em;
 }
 
 .rpsIcons {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 
 
 .rpsIcon {
-  font-size: 4em;
+  font-size: 3.5em;
   padding: 2px;
 }
 
@@ -444,9 +457,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .gameplayHeader {
@@ -454,7 +466,6 @@
   align-content: baseline;
   justify-content: space-between;
   margin-top: 20px;
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -503,10 +514,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 162px;
-  width: 162px;
+  height: 150px;
+  width: 150px;
   border: 5px solid;
   border-radius: 100%;
+  margin: 0 10px;
 }
 
 .playerChoiceIcon {
@@ -528,9 +540,16 @@
   display: flex;
   border: 2px solid;
   margin-top: 10px;
-  width: 20%;
+  width: 22%;
   justify-content: space-between;
   padding: 5px;
+}
+
+.gameChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gameChoiceBtn {
@@ -548,10 +567,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.resultTitle {
-  margin-bottom: 5px;
 }
 
 .outerResult {
@@ -950,6 +965,7 @@ tttTitle {
     height: 88%;
     margin-right: 10px;
     margin-left: 0px;
+    overflow: scroll;
   }
 
   .headerCont {

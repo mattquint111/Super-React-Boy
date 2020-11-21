@@ -32,9 +32,6 @@ function BaseLayout(props) {
                         <div className="direction">
                             <i class="fas fa-plus"></i>
                         </div>
-                        {/* <div className="directionCont">
-                            <h1 className="directionPad">+</h1>
-                        </div> */}
 
                         <div className="startSelectCont"></div>
 
