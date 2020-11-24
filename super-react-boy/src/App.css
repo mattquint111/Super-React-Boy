@@ -948,12 +948,25 @@ tttTitle {
 /* ============MOBILE============ */
 @media (max-width: 425px) {
 
+  .outerScreen {
+    height: 80%;
+  }
+
   .outerScreen-top {
     margin: 2px 0;
   }
 
+  .outerScreen-bottom {
+    height: 90%;
+  }
+
   .headerText {
     font-size: .6em;
+  }
+
+  .power {
+    width: 10px;
+    height: 10px;
   }
 
   .colorBarsLeft {
@@ -969,4 +982,172 @@ tttTitle {
     height: 70%;
     flex-grow: 3;
   }
+
+  .innerScreen {
+    width: 312px;
+    height: 482px;
+  }
+
+  .controlsCont {
+    height: 20%;
+  }
+
+  .controlsTop {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+
+  .powerText {
+    font-size: 6px;
+    padding: 0 2px;
+  }
+
+  .fa-plus {
+    font-size: 5em;
+    margin-bottom: .5em;
+  }
+
+  .startSelectCont {
+    width: 40px;
+    height: 10px;
+    box-shadow: 35px 22px #999, 0 0 0 5px #dfdfdf, 35px 22px 0 5px #dfdfdf;
+    margin-bottom: 20px
+  }
+
+  .buttonCont {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 3.5em;
+
+  }
+
+  .gameButton-X {
+    width: 3em;
+    height: 3em;
+    margin-left: 5px;
+
+  }
+  .gameButton-Y {
+    width: 3em;
+    height: 3em;
+    margin-right: 5px;
+  }
+
+  .homepageTitle {
+    font-size: 1.3em;
+  }
+
+  .gamesCont {
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 90%;
+    justify-content: flex-start;
+  }
+
+  .selectTitle {
+    margin-top: 5px;
+  }
+
+  .gameHeader {
+    margin-bottom: 50px;
+    align-content: center;
+  }
+
+  .goToSelect {
+    font-size: 1em;
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+
+  
+
+  .rpsTitle {
+    font-size: .9em;
+  }
+
+  .easterEgg {
+    display: none;
+  }
+
+  .rpsHomeSecretKiwi {
+    left: 120px;
+  }
+
+  .playerNameInput {
+    font-size: 1.3em;
+  }
+
+  .startGame {
+    font-size: 1.2em;
+  }
+
+  .goToHome {
+    font-size: 1em;
+    padding: 5px 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  .gameplayCont {
+    width: auto;
+  }
+
+  .scoresCont {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .resultTitle {
+    font-size: 1.5em;
+  }
+
+  .result {
+    font-size: .8em;
+    width: 75px;
+    height: 45px;
+  }
+  .result h1 {
+    font-size: 1.5em;
+  }
+
+  .playerName {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .gameplayHeader {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .gameResultCont {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .choiceIconCont {
+    height: 80px;
+    width: 80px;
+  }
+
+  .palyerResultCont {
+    width: auto;
+  }
+
+  .playerChoiceIcon {
+    font-size: 3em;
+    padding: 15px;
+  }
+
+  .gameChoiceCont {
+    width: auto;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+
+  .gameChoice {
+    margin: 10px;
+  }
+
 }
