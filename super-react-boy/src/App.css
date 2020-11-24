@@ -487,8 +487,9 @@
 .scoresCont {
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  width: 75%;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .scoreCont {
@@ -511,7 +512,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 70%;
 }
 
 .playerChoice {
@@ -519,6 +520,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
 }
 
 .choiceIconCont {
@@ -550,7 +552,7 @@
 .gameChoiceCont {
   display: flex;
   border: 2px solid;
-  margin-top: 10px;
+  margin-bottom: 20px;
   width: 22%;
   justify-content: space-between;
   padding: 5px;
@@ -578,6 +580,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -25px;
 }
 
 .outerResult {
@@ -589,7 +592,7 @@
   border: 3px double;
   padding: 20px;
   width: 133.13px;
-  height: 83px;
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1087,6 +1090,7 @@ tttTitle {
     margin-left: 10px;
     margin-right: 15px;
   }
+  
 
   .gameplayCont {
     width: auto;
@@ -1096,6 +1100,10 @@ tttTitle {
     width: 85%;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  .playerChoice {
+    margin: 0 10px;
   }
 
   .resultTitle {
@@ -1142,7 +1150,7 @@ tttTitle {
 
   .gameChoiceCont {
     width: auto;
-    margin-left: 15px;
+    margin-left: 30px;
     margin-top: 30px;
   }
 
