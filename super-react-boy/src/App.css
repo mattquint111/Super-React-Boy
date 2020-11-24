@@ -388,6 +388,7 @@
 }
 
 .rpsTitle {
+  font-size: 1.5em;
   display: flex;
   align-items: center;
 }
@@ -461,17 +462,26 @@
   height: 90%;
 }
 
+.playerName {
+  font-size: 1.5em;
+}
+
+.gameChoiceTitle {
+  font-size: 1.2em;
+}
+
 .gameplayHeader {
   display: flex;
   align-content: baseline;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
 }
 
 .round {
   border: 2px solid;
   padding: 5px;
+  font-size: 1.5em;
 }
 
 .scoresCont {
@@ -486,6 +496,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: .9em;
 }
 
 .gameResultCont {
@@ -935,274 +946,27 @@ tttTitle {
 
 
 /* ============MOBILE============ */
-@media (max-width: 375px) {
-  .gameConsole {
-    height: 99vh;
-    width: 99%;
+@media (max-width: 425px) {
+
+  .outerScreen-top {
+    margin: 2px 0;
   }
 
-  .outerScreen {
-    width: 95%;
-    height: 70vh;
-  }
-
-  .batteryCont {
-    margin-top: -200px;
-    margin-left: 2px;
-  }
-  
-  .power {
-    width: 10px;
-    height: 10px;
-  }
-
-  .powerText {
-    font-size: 6px;
-  }
-
-  .innerScreen {
-    width: 100%;
-    height: 88%;
-    margin-right: 10px;
-    margin-left: 0px;
-    overflow: scroll;
-  }
-
-  .headerCont {
-    top: 30px;
-    width: 90%;
-  }
-  
   .headerText {
-    font-size: 10px;
+    font-size: .6em;
   }
 
   .colorBarsLeft {
     border-top: 3px solid #8b1d90;
     border-bottom: 3px solid #283593;
+    height: 70%;
+    flex-grow: 15;
   }
+
   .colorBarsRight {
     border-top: 3px solid #8b1d90;
     border-bottom: 3px solid #283593;
+    height: 70%;
+    flex-grow: 3;
   }
-
-  .controlsTop {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .directionCont {
-    margin-left: 10px;
-    margin-right: 60px;
-  }
-
-  .directionPad {
-    font-size: 8em;
-  }
-
-  .buttonCont {
-    width: 180px;
-    height: 60px;
-    margin-left: 50px
-  }
-
-  .gameButton-X {
-    height: 40px;
-    width: 40px;
-    margin-right: 5px;
-  }
-  .gameButton-Y {
-    height: 40px;
-    width: 40px;
-  }
-
-  .startSelectCont {
-    width: 50px;
-    height: 10px;
-    margin-right: 90px;
-  }
-
-  .controlsBottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .homepageTitle {
-    font-size: 1em;
-  }
-
-  .startBtn {
-    font-size: 1em;
-  }
-
-  .gamesCont {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    padding-top: 120px;
-  }
-
-  .gameCont {
-    height: 100%;
-  }
-
-  .goToSelect {
-    font-size: 1em;
-    margin-left: 10px;
-    margin-right: 60px;
-    padding: 5px 10px;
-  }
-
-  .gameHeader {
-    margin-top: 10px;
-  }
-
-  .rpsTitle {
-    font-size: .8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .fa-bomb {
-    font-size: 1em;
-  }
-
-  .playerNameInput {
-    font-size: 1em;
-  }
-
-  .rpsHomeSecretKiwi {
-    left: 100px;
-    top: 25px;
-  }
-
-  .startGame {
-    font-size: 1em;
-  }
-
-  .goToHome {
-    font-size: 1em;
-    margin-left: 10px;
-    padding: 5px 10px;
-  }
-
-  .easterEgg {
-    margin-right: 0;
-  }
-
-  .playerChoiceIcon {
-    font-size: 3em;
-  }
-
-  .choiceIconCont {
-    width: 75px;
-    height: 75px;
-    margin: 20px;
-  }
-
-  .playerName {
-    font-size: 1em;
-  }
-
-  .result {
-    width: 75px;
-    height: 40px;
-    font-size: .5em;
-    padding: 10px;
-  }
-
-  .gameChoiceCont {
-    font-size: 1em;
-    width: auto;
-  }
-
-  .rpsIcon {
-    font-size: 3em;
-  }
-
-  .gameChoiceTitle {
-    font-size: .8em;
-  }
-
-  .resultTitle {
-    font-size: 1.5em;
-  }
-
-  .playerResultCont {
-    width: auto;
-  }
-
-  .tttTitle {
-    font-size: 1em;
-  }
-
-  .tictactoeCont {
-    width: 308px;
-  }
-
-  .boardCont {
-    margin-top: 30px;
-    width: 250px;
-    height: 250px;
-  }
-
-  .squareCont {
-    font-size: 2em;
-    padding: 5px;
-  }
-
-  .tttHeader {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .mobileHidden {
-    display: none;
-  }
-
-  .tttTitle {
-    margin-right: 55px;
-    text-align: center;
-  }
-
-  .movesCont {
-    display: flex;
-    flex-direction: row;
-    font-size: .5em;
-    margin: 0;
-    overflow: hidden;
-  }
-
-  .tttGameCont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .winnerCont {
-    font-size: 1em;
-    width: 150px;
-    height: auto;
-    margin: 0;
-  }
-
-  .listItemCont {
-    font-size: .8em;
-    padding: 0px;
-    margin: 0;
-  }
-
-  .tttSecretKiwi {
-    display: none;
-  }
-
-
-
-
 }
