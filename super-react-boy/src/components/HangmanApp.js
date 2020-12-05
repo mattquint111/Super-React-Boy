@@ -5,12 +5,21 @@ import Figure from './hangmanComponents/Figure'
 import WrongLetters from './hangmanComponents/WrongLetters'
 import Word from './hangmanComponents/Word'
 import Popup from './hangmanComponents/Popup'
-import Notification from './hangmanComponents/Notification'
+// import Notification from './hangmanComponents/Notification'
 import {showNotification as show} from './hangmanComponents/helpers'
+import initialWords from './hangmanComponents/initialWords'
 
-const words = ['computer', 'application', 'programming', 'interface', 'wizard', 'react', 'software', 'minimum', 'cattywampus', 'laptop', 'desktop']
+    let words = initialWords
+    let selectedWord = words[Math.floor(Math.random() * words.length)]
 
-let selectedWord = words[Math.floor(Math.random() * words.length)] 
+    function getRandomWords() {
+      fetch('https://random-word-api.herokuapp.com/word?number=20')
+        .then(response => response.json())
+        .then(result => {
+          words = result
+        })
+    }
+    getRandomWords()
 
 function HangmanApp() {
     const [playable, setPlayable] = useState(true)
@@ -58,6 +67,7 @@ function HangmanApp() {
             <div className='hangmanHeaderCont'>
                 <Link to='game-select'><i class="fas fa-angle-double-left goToSelect goBackHang"></i></Link>
                 <Header />
+                <div className='hangHeaderSpacer'></div>
             </div>
             
             <div className='game-container'>

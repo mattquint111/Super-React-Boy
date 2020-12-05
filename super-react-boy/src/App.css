@@ -804,10 +804,11 @@ tttTitle {
   display: flex;
   margin-top: 10px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .goBackHang {
-  margin-right: 465px;
+  margin-right: auto;
 }
 
 .hangmanTitleCont {
@@ -818,6 +819,11 @@ tttTitle {
   margin-bottom : 30px;
   margin-top: 20px;
   font-size: 3em;
+}
+
+.hangHeaderSpacer {
+  width: 100px;
+  height: 30px;
 }
 
 .hangmanGameCont {
@@ -833,9 +839,11 @@ tttTitle {
 
 .game-container {
   padding: 20px 30px;
+  padding-top: 10px;
   position: relative;
   margin: auto;
-  height: 350px;
+  height: auto;
+  min-height: 325px;
   width: 450px;
 }
 
