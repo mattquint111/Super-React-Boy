@@ -15,9 +15,9 @@ function RPSHome() {
   return (
     <div className="gameCont">
         <div className="gameHeader">
-          <Link to='game-select'><i class="fas fa-angle-double-left goToSelect"></i></Link>
+          <Link to='game-select'><i className="fas fa-angle-double-left goToSelect"></i></Link>
           <h1 className='pretendo rpsTitle'>ROCK PAPER SCISSORS</h1>
-          <div><i class="fas fa-bomb easterEgg hidden"></i></div>
+          <div><i className="fas fa-bomb easterEgg hidden"></i></div>
         </div>
         
         <i onClick={secretKiwi} className="rpsHomeSecretKiwi fas fa-kiwi-bird"></i>

@@ -14,9 +14,9 @@ function GameSelect() {
                 <Link to='/rps-home' className='gameIcon'>
                     <h2 className='gameTitle'>Rock Paper Scissors</h2>
                     <div className='rpsIcons gameImg'>
-                        <i class="rpsIcon far fa-hand-rock"></i>
-                        <i class="rpsIcon far fa-hand-paper"></i>
-                        <i class="rpsIcon far fa-hand-scissors flip-horz"></i>
+                        <i className="rpsIcon far fa-hand-rock"></i>
+                        <i className="rpsIcon far fa-hand-paper"></i>
+                        <i className="rpsIcon far fa-hand-scissors flip-horz"></i>
                     </div>
                     <h2 className="playerNumber">(1 PLAYER)</h2>
                 </Link>

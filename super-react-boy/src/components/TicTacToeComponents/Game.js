@@ -50,7 +50,7 @@ const Game = () => {
             
             <div>
                 <p className="winnerCont">{winner ? "WINNER: " + winner : "Next Player: " + (xIsNext ? 'X' : 'O')}</p>
-                <i onClick={secretKiwi} class="fas fa-kiwi-bird tttSecretKiwi"></i>
+                <i onClick={secretKiwi} className="fas fa-kiwi-bird tttSecretKiwi"></i>
             </div>
             
 

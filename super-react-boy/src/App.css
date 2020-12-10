@@ -532,12 +532,21 @@
   border: 5px solid;
   border-radius: 100%;
   margin: 0 10px;
+
 }
 
 .playerChoiceIcon {
   padding: 20px;
   font-size: 7em;
   margin-bottom: 10px;
+}
+
+.playerChoiceIcon.fa-bomb {
+  margin-top: 20px;
+}
+
+.playerChoiceIcon.fa-dizzy {
+  margin-top: 12px;
 }
 
 .playerChoiceIcon.fa-hand-scissors { 

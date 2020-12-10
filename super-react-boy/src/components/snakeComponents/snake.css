@@ -23,6 +23,9 @@
 }
 
 .snake-game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 3px solid #676516;
-    padding: 20px;
+    padding: 15px;
 }

@@ -22,6 +22,7 @@ function SnakeApp() {
     const [gameOver, setGameOver] = useState(false);
     const [score, setScore] = useState(0)
     const [scoreValue, setScoreValue] = useState(20)
+    const [SPEED, setSPEED] = useState(100)
 
 
 
@@ -88,25 +89,43 @@ function SnakeApp() {
         setSnake(snakeCopy);
       };
 
-      let SPEED = 100
+      // let SPEED = 100
 
       const chooseSpeed = e => {
+        // switch (e.target.value) {
+        //   case 'easy':
+        //     SPEED = 150
+        //     setScoreValue(10)
+        //     break;
+        //   case 'medium':
+        //     SPEED = 100
+        //     setScoreValue(20)
+        //     break;
+        //   case 'hard':
+        //     SPEED = 50
+        //     setScoreValue(40)
+        //     break;
+        //   case 'insane':
+        //     SPEED = 30
+        //     setScoreValue(80)
+        //     break;
+        // }
 
         switch (e.target.value) {
           case 'easy':
-            SPEED = 150
+            setSPEED(150)
             setScoreValue(10)
             break;
           case 'medium':
-            SPEED = 100
+            setSPEED(100)
             setScoreValue(20)
             break;
           case 'hard':
-            SPEED = 50
+            setSPEED(50)
             setScoreValue(40)
             break;
           case 'insane':
-            SPEED = 30
+            setSPEED(30)
             setScoreValue(80)
             break;
         }
@@ -135,7 +154,7 @@ function SnakeApp() {
 
         <div className="snakeGameCont" role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
 
-            <Link to='game-select'><i class="fas fa-angle-double-left goToSelect"></i></Link>
+            <Link to='game-select'><i className="fas fa-angle-double-left goToSelect"></i></Link>
 
             <div className='snakeStartBtnCont'>
 
