@@ -6,10 +6,11 @@ import {
     SNAKE_START,
     APPLE_START,
     SCALE,
-    SPEED,
+    // SPEED,
     DIRECTIONS
 } from './snakeComponents/constants'
 import { secretKiwi } from './secretKiwi'
+import './snakeComponents/snake.css'
 
 function SnakeApp() {
 
@@ -19,8 +20,13 @@ function SnakeApp() {
     const [dir, setDir] = useState([0, -1]);
     const [speed, setSpeed] = useState(null);
     const [gameOver, setGameOver] = useState(false);
+    const [score, setScore] = useState(0)
+    const [scoreValue, setScoreValue] = useState(20)
+
+
 
     UseInterval(() => gameLoop(), speed);
+
 
     const endGame = () => {
         setSpeed(null);
@@ -48,6 +54,18 @@ function SnakeApp() {
         return false;
       };
 
+      const increaseScore = () => {
+        if (scoreValue === 10) {
+          setScore(score + scoreValue)
+        } else if (scoreValue === 20) {
+          setScore(score + scoreValue)
+        } else if (scoreValue === 40) {
+          setScore(score + scoreValue)
+        } else if (scoreValue === 80) {
+          setScore(score + scoreValue)
+        }
+      }
+
       const checkAppleCollision = newSnake => {
         if (newSnake[0][0] === apple[0] && newSnake[0][1] === apple[1]) {
           let newApple = createApple();
@@ -55,11 +73,11 @@ function SnakeApp() {
             newApple = createApple();
           }
           setApple(newApple);
+          increaseScore()
           return true;
         }
         return false;
       };
-    
 
       const gameLoop = () => {
         const snakeCopy = JSON.parse(JSON.stringify(snake));
@@ -70,11 +88,36 @@ function SnakeApp() {
         setSnake(snakeCopy);
       };
 
+      let SPEED = 100
+
+      const chooseSpeed = e => {
+
+        switch (e.target.value) {
+          case 'easy':
+            SPEED = 150
+            setScoreValue(10)
+            break;
+          case 'medium':
+            SPEED = 100
+            setScoreValue(20)
+            break;
+          case 'hard':
+            SPEED = 50
+            setScoreValue(40)
+            break;
+          case 'insane':
+            SPEED = 30
+            setScoreValue(80)
+            break;
+        }
+      }
+
       const startGame = () => {
         setSnake(SNAKE_START);
         setApple(APPLE_START);
         setDir([0, -1]);
         setSpeed(SPEED);
+        setScore(0)
         setGameOver(false);
       };
 
@@ -95,10 +138,23 @@ function SnakeApp() {
             <Link to='game-select'><i class="fas fa-angle-double-left goToSelect"></i></Link>
 
             <div className='snakeStartBtnCont'>
+
                 <h1 className="pretendo snakeTitle">SNAKE</h1>
+
                 <button className="snakeStartBtn" onClick={startGame}>Start Game</button>
+
+                <div className='speed-select-cont'>
+                  <h2>Choose Difficulty:</h2>
+                  <div className="speed-btn-cont">
+                    <button className="speed-btn speed-easy-btn" value='easy' onClick={chooseSpeed}>Easy</button>
+                    <button className="speed-btn speed-medium-btn" value='medium' onClick={chooseSpeed}>Medium</button>
+                    <button className="speed-btn speed-hard-btn" value='hard' onClick={chooseSpeed}>Hard</button>
+                    <button className="speed-btn speed-insane-btn" value='insane' onClick={chooseSpeed}>Insane</button>
+                  </div>
+                </div>
+
                 <div className="gameOverCont">
-                    {gameOver && <div>GAME OVER!</div>}
+                    {gameOver && <div className="snake-game-over">GAME OVER!</div>}
                 </div>
             </div>
             
@@ -110,6 +166,9 @@ function SnakeApp() {
                     width={`${CANVAS_SIZE[0]}px`}
                     height={`${CANVAS_SIZE[1]}px`}
                 />
+                <div className='score-cont'>
+                  <h2>SCORE: {score}</h2>
+                </div>
 
             </div>
             

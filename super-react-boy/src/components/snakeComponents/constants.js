@@ -5,7 +5,7 @@ const SNAKE_START = [
 ]
 const APPLE_START = [8, 3]
 const SCALE = 20
-const SPEED = 100
+// const SPEED = 100
 const DIRECTIONS = {
     38: [0, -1], //up
     40: [0, 1], //down
@@ -18,6 +18,6 @@ export {
     SNAKE_START,
     APPLE_START,
     SCALE,
-    SPEED,
+    // SPEED,
     DIRECTIONS
 }

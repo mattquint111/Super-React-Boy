@@ -1,0 +1,28 @@
+.speed-select-cont {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.speed-btn {
+    background: none;
+    color: #676516;
+    border: 3px solid #676516;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+}
+.speed-btn:hover {
+    background: #676516;
+    color: #bdae58;
+}
+
+.snake-game-over {
+    border: 3px solid #676516;
+    padding: 20px;
+}
