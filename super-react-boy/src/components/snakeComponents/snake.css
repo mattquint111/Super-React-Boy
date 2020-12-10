@@ -1,5 +1,59 @@
+.snakeGameCont {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-cont {
+    flex-grow: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.center-cont {
+    flex-grow: 1;
+    margin-top: 10px;
+    display: flex;
+}
+
+.right-cont {
+    flex-grow: 1;
+    margin: 10px;
+    max-width: 370px;
+}
+
+.back-title-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* margin-top: 10px; */
+}
+
+.go-back-snake {
+    margin-right: 20px;
+}
+
+.snakeTitle {
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snake-options-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .speed-select-cont {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

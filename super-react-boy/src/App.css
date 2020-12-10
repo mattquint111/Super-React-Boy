@@ -786,12 +786,12 @@ tttTitle {
 
 .gameOverCont {
   font-size: 2em;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .snakeRulesCont {
-  margin-left: 150px;
-  margin-right: 20px;
+  margin: 0;
+  width: auto;
 }
 
 .snakeRulesTitle {
@@ -800,16 +800,19 @@ tttTitle {
   margin-bottom: 10px;
 }
 
+.rulesContent {
+  width: auto;
+}
+
 .rulesContent li {
   margin: 10px;
+
 }
 
 .snakeSecretKiwi {
-  transform: scaleX(-1) rotate(270deg);
-  margin-top: 150px;
-  margin-left: -152px;
   cursor: pointer;
   color: #bdae58;
+
 }
 .snakeSecretKiwi:hover {
   color: #676516;

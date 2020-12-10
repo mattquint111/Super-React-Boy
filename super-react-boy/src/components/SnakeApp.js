@@ -154,54 +154,64 @@ function SnakeApp() {
 
         <div className="snakeGameCont" role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
 
-            <Link to='game-select'><i className="fas fa-angle-double-left goToSelect"></i></Link>
+            <div className="left-cont">
 
-            <div className='snakeStartBtnCont'>
-
+              <div className="back-title-cont">
+                <div className="go-back-snake">
+                  <Link to='game-select'><i className="fas fa-angle-double-left goToSelect"></i></Link>
+                </div>
                 <h1 className="pretendo snakeTitle">SNAKE</h1>
+              </div>
+              
+              <div className='snake-options-cont'>
+                  <button className="snakeStartBtn" onClick={startGame}>Start Game</button>
 
-                <button className="snakeStartBtn" onClick={startGame}>Start Game</button>
-
-                <div className='speed-select-cont'>
-                  <h2>Choose Difficulty:</h2>
-                  <div className="speed-btn-cont">
-                    <button className="speed-btn speed-easy-btn" value='easy' onClick={chooseSpeed}>Easy</button>
-                    <button className="speed-btn speed-medium-btn" value='medium' onClick={chooseSpeed}>Medium</button>
-                    <button className="speed-btn speed-hard-btn" value='hard' onClick={chooseSpeed}>Hard</button>
-                    <button className="speed-btn speed-insane-btn" value='insane' onClick={chooseSpeed}>Insane</button>
+                  <div className='speed-select-cont'>
+                    <h2>Choose Difficulty:</h2>
+                    <div className="speed-btn-cont">
+                      <button className="speed-btn speed-easy-btn" value='easy' onClick={chooseSpeed}>Easy</button>
+                      <button className="speed-btn speed-medium-btn" value='medium' onClick={chooseSpeed}>Medium</button>
+                      <button className="speed-btn speed-hard-btn" value='hard' onClick={chooseSpeed}>Hard</button>
+                      <button className="speed-btn speed-insane-btn" value='insane' onClick={chooseSpeed}>Insane</button>
+                    </div>
                   </div>
-                </div>
 
-                <div className="gameOverCont">
-                    {gameOver && <div className="snake-game-over">GAME OVER!</div>}
-                </div>
-            </div>
-            
-            
-            <div className='snakeCanvasCont'>
-                <canvas
-                    className="snakeCanvas"
-                    ref={canvasRef}
-                    width={`${CANVAS_SIZE[0]}px`}
-                    height={`${CANVAS_SIZE[1]}px`}
-                />
-                <div className='score-cont'>
-                  <h2>SCORE: {score}</h2>
-                </div>
+                  <div className='score-cont'>
+                    <h2>SCORE: {score}</h2>
+                  </div>
+
+                  <div className="gameOverCont">
+                      {gameOver && <div className="snake-game-over">GAME OVER!</div>}
+                  </div>
+              </div>
 
             </div>
             
+            <div className="center-cont">
+              <div className='snakeCanvasCont'>
+                  <canvas
+                      className="snakeCanvas"
+                      ref={canvasRef}
+                      width={`${CANVAS_SIZE[0]}px`}
+                      height={`${CANVAS_SIZE[1]}px`}
+                  />
+              </div>
+              <i onClick={secretKiwi} className="snakeSecretKiwi fas fa-kiwi-bird"></i>
+            </div>
             
-
-            <div className="snakeRulesCont">
-                <h1 className="snakeRulesTitle">RULES</h1>
-                
-                <ul className="rulesContent">
-                    <li><h4>Use the arrow keys to maneuver snake</h4></li>
-                    <li><h4>Eat the dot to grow bigger</h4></li>
-                    <li><h4>Don't crash into the walls or yourself or you die</h4></li>
-                </ul>
-                <i onClick={secretKiwi} className="snakeSecretKiwi fas fa-kiwi-bird"></i>
+            
+            <div className="right-cont">
+              <div className="snakeRulesCont">
+                  
+                  <h1 className="snakeRulesTitle">RULES</h1>
+                  
+                  <ul className="rulesContent">
+                      <li><h4>Use the arrow keys to maneuver snake</h4></li>
+                      <li><h4>Eat the dot to grow bigger</h4></li>
+                      <li><h4>Don't crash into the walls or yourself or you die</h4></li>
+                  </ul>
+                  
+              </div>
             </div>
             
             
