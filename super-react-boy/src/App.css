@@ -535,10 +535,17 @@
 }
 
 .playerChoiceIcon {
-
   padding: 20px;
   font-size: 7em;
   margin-bottom: 10px;
+}
+
+.playerChoiceIcon.fa-hand-scissors { 
+  transform: scaleY(-1) rotate(180deg);
+}
+
+.computerIcon.fa-hand-scissors {
+  transform: rotate(0deg);
 }
 
 .computerIcon {
