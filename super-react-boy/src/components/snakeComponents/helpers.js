@@ -1,4 +1,4 @@
-function buildSnakeScore(score, difficulty, playerName) {
+const buildSnakeScore = (score, difficulty, playerName) => {
     let snakeScore = {
         name: playerName,
         score: score,
@@ -6,6 +6,8 @@ function buildSnakeScore(score, difficulty, playerName) {
     }
 }
 
+
+
 export {
-    buildSnakeScore
+    buildSnakeScore,
 }

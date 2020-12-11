@@ -36,23 +36,45 @@ function SnakeApp(props) {
     let playerName = props.match.params.player
 
     const getSnakeScores = async () => {
-      const response = await fetch("http://localhost:8080/snake-scores", {method: "GET"})
-      setHighScores(response.json())
-      console.log(highScores)
-
-      // fetch("http://localhost:8080/snake-scores")
-      //   .then(response => response.json())
-      //   .then(result => {
-      //     setHighScores(result)
-      //     console.log(highScores)
-      //   })
+      const response = await fetch("http://localhost:8080/snake-scores")
+      const result = await response.json()
+      setHighScores(result)
+      console.log(result)
     }
+
+    const sendSnakeScores = async () => {
+      let snakeScore = {
+        name: playerName,
+        score: score,
+        difficulty: difficulty
+      }
+
+      fetch("http://localhost:8080/snake-scores", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(snakeScore)
+      }).then(response => response.json())
+        .then(result => console.log(snakeScore))
+    }
+
+    const highScoreItems = highScores.map(score => {
+      return (
+        <tr key={score.id}>
+          <td>{score.name}</td>    
+          <td>{score.score}</td>    
+          <td>{score.difficulty}</td>    
+        </tr>
+      )
+    })
     
 
     const endGame = () => {
         setSpeed(null);
         setGameOver(true);
         buildSnakeScore(score, difficulty, playerName)
+        sendSnakeScores()
         getSnakeScores()
       };
 
@@ -209,16 +231,29 @@ function SnakeApp(props) {
             
             
             <div className="right-cont">
+
               <div className="snakeRulesCont">
-                  
                   <h1 className="snakeRulesTitle">RULES</h1>
-                  
                   <ul className="rulesContent">
                       <li><h4>Use the arrow keys to maneuver snake</h4></li>
                       <li><h4>Eat the dot to grow bigger</h4></li>
                       <li><h4>Don't crash into the walls or yourself or you die</h4></li>
                   </ul>
+              </div>
+
+              <div className="highScore-cont">
+                <h1 className="highScore-title">High Scores</h1>
+                <div className="highScore-table-cont">
+                  <table>
+                    <tr>
+                      <th>Name</th>
+                      <th>Score</th>
+                      <th>Difficulty</th>
+                    </tr>
+                    {highScoreItems}
+                  </table>
                   
+                  </div>
               </div>
             </div>
             
