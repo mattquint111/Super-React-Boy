@@ -9,10 +9,13 @@ import {
     // SPEED,
     DIRECTIONS
 } from './snakeComponents/constants'
+import {
+  buildSnakeScore,
+} from './snakeComponents/helpers'
 import { secretKiwi } from './secretKiwi'
 import './snakeComponents/snake.css'
 
-function SnakeApp() {
+function SnakeApp(props) {
 
     const canvasRef = useRef();
     const [snake, setSnake] = useState(SNAKE_START);
@@ -23,15 +26,34 @@ function SnakeApp() {
     const [score, setScore] = useState(0)
     const [scoreValue, setScoreValue] = useState(20)
     const [SPEED, setSPEED] = useState(100)
+    const [difficulty, setDifficulty] = useState('medium')
+    const [highScores, setHighScores] = useState([])
 
 
 
     UseInterval(() => gameLoop(), speed);
 
+    let playerName = props.match.params.player
+
+    const getSnakeScores = async () => {
+      const response = await fetch("http://localhost:8080/snake-scores", {method: "GET"})
+      setHighScores(response.json())
+      console.log(highScores)
+
+      // fetch("http://localhost:8080/snake-scores")
+      //   .then(response => response.json())
+      //   .then(result => {
+      //     setHighScores(result)
+      //     console.log(highScores)
+      //   })
+    }
+    
 
     const endGame = () => {
         setSpeed(null);
         setGameOver(true);
+        buildSnakeScore(score, difficulty, playerName)
+        getSnakeScores()
       };
 
       const moveSnake = ({ keyCode }) =>
@@ -89,43 +111,29 @@ function SnakeApp() {
         setSnake(snakeCopy);
       };
 
-      // let SPEED = 100
+
 
       const chooseSpeed = e => {
-        // switch (e.target.value) {
-        //   case 'easy':
-        //     SPEED = 150
-        //     setScoreValue(10)
-        //     break;
-        //   case 'medium':
-        //     SPEED = 100
-        //     setScoreValue(20)
-        //     break;
-        //   case 'hard':
-        //     SPEED = 50
-        //     setScoreValue(40)
-        //     break;
-        //   case 'insane':
-        //     SPEED = 30
-        //     setScoreValue(80)
-        //     break;
-        // }
 
         switch (e.target.value) {
           case 'easy':
             setSPEED(150)
+            setDifficulty(e.target.value)
             setScoreValue(10)
             break;
           case 'medium':
             setSPEED(100)
+            setDifficulty(e.target.value)
             setScoreValue(20)
             break;
           case 'hard':
             setSPEED(50)
+            setDifficulty(e.target.value)
             setScoreValue(40)
             break;
           case 'insane':
             setSPEED(30)
+            setDifficulty(e.target.value)
             setScoreValue(80)
             break;
         }
@@ -158,7 +166,7 @@ function SnakeApp() {
 
               <div className="back-title-cont">
                 <div className="go-back-snake">
-                  <Link to='game-select'><i className="fas fa-angle-double-left goToSelect"></i></Link>
+                  <Link to='/snake-home'><i className="fas fa-arrow-left goToHome"></i></Link>
                 </div>
                 <h1 className="pretendo snakeTitle">SNAKE</h1>
               </div>

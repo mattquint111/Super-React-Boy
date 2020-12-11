@@ -29,7 +29,7 @@ function GameSelect() {
                     <h2 className="playerNumber">(2 PLAYERS)</h2>
                 </Link>
 
-                <Link to='/snake' className='gameIcon'>
+                <Link to='/snake-home' className='gameIcon'>
                     <h2 className='gameTitle'>Snake</h2>
                     <div className='gameImgCont'>
                         <img className="snakeImg" src={snake} />
