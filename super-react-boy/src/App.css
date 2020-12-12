@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .gameConsole {
@@ -981,6 +982,10 @@ tttTitle {
 
 /* ============MOBILE============ */
 @media (max-width: 425px) {
+
+  .mobile-hidden {
+    display: none;
+  }
 
   .outerScreen {
     height: 80%;
