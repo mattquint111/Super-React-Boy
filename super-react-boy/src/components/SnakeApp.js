@@ -34,12 +34,17 @@ function SnakeApp(props) {
     UseInterval(() => gameLoop(), speed);
 
     let playerName = props.match.params.player
+    const URL = "https://whispering-lowlands-60127.herokuapp.com"
 
     const getSnakeScores = async () => {
-      const response = await fetch("http://localhost:8080/snake-scores")
+      const response = await fetch(`${URL}/snake-scores`)
       const result = await response.json()
       setHighScores(result)
-      console.log(result)
+      // console.log(result)
+    }
+
+    if (highScores.length === 0) {
+      getSnakeScores()
     }
 
     const sendSnakeScores = async () => {
@@ -49,14 +54,14 @@ function SnakeApp(props) {
         difficulty: difficulty
       }
 
-      fetch("http://localhost:8080/snake-scores", {
+      fetch(`${URL}/snake-scores`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(snakeScore)
       }).then(response => response.json())
-        .then(result => console.log(snakeScore))
+        // .then(result => console.log(snakeScore))
     }
 
     const highScoreItems = highScores.map(score => {

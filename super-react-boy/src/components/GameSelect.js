@@ -29,7 +29,7 @@ function GameSelect() {
                     <h2 className="playerNumber">(2 PLAYERS)</h2>
                 </Link>
 
-                <Link to='/snake-home' className='gameIcon'>
+                <Link to='/snake-home' className='gameIcon mobile-hidden'>
                     <h2 className='gameTitle'>Snake</h2>
                     <div className='gameImgCont'>
                         <img className="snakeImg" src={snake} />
@@ -37,7 +37,7 @@ function GameSelect() {
                     <h2 className="playerNumber">(1 PLAYER)</h2>
                 </Link>
 
-                <Link to='/hangman' className='gameIcon'>
+                <Link to='/hangman' className='gameIcon mobile-hidden'>
                     <h2 className='gameTitle'>Hangman</h2>
                     <div className='gameImgCont'>
                         <img className="snakeImg" src={hangman} />

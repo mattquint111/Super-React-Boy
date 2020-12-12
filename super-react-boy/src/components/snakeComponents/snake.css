@@ -1,6 +1,8 @@
 .snakeGameCont {
     width: 100%;
     justify-content: space-between;
+    overflow: hidden;
+    outline: none;
 }
 
 .left-cont {
@@ -82,4 +84,20 @@
     align-items: center;
     border: 3px solid #676516;
     padding: 15px;
+}
+
+.highScore-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table, th, td {
+    padding: 2px 5px;
+    border: 2px solid #676516;
+}
+
+.highScore-title {
+    margin-bottom: 5px;
 }
