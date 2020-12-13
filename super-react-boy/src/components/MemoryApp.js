@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './memoryComponents/memory.css'
-import Card from './memoryComponents/Card'
+import Board from './memoryComponents/board/Board'
+import initializeDeck from './memoryComponents/deck'
 
 function MemoryApp() {
 
     const [flipped, setFlipped] = useState([])
+    const [cards, setCards] = useState([])
+
+    useEffect(() => {
+        setCards(initializeDeck())
+    }, [])
 
     const handleClick = (id) => {
         setFlipped([...flipped, id])
@@ -18,15 +24,12 @@ function MemoryApp() {
             <h1>MEMORY</h1>
             <h2>Can you remember where the cards are?</h2>
 
-            <Card
-                id={1}
-                width={100}
-                height={100}
-                back={cardBack}
-                front={cardFront}
-                flipped={flipped.includes(1)}
-                handleClick={ () => handleClick(1) }
+            <Board 
+                cards={cards}
+                flipped={flipped}
+                handleClick={handleClick}
             />
+
         </div>
     )
 }
