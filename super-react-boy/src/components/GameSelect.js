@@ -7,6 +7,7 @@ import hangman from '../images/hangman.png'
 function GameSelect() {
 
   return (
+      
     <div className="gameSelectCont">
         <h1 className="selectTitle pretendo">Select a Game</h1>
 
