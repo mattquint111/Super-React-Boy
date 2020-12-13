@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useHistory } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import tictactoe from '../images/tictactoe.png'
 import snake from '../images/snake.png'
