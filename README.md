@@ -10,13 +10,25 @@ This app was inspired by the first generation 8-bit Game Boy console with they s
   <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/Screen%20Shot%202020-12-12%20at%2010.08.47%20AM.png">
   <img width="250" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/Screen%20Shot%202020-12-12%20at%2010.09.10%20AM.png">
 </p>
-<p align="center"> • Left: desktop, Right: mobile</p>
+<p align="center"> • Desktop, Mobile</p>
 
 
 
 ## Games
-  **- Rock Paper Scissors:** 
-  * Play against a computer controlled opponent. Keep track of your score and see if you can beat the AI.
+  
+  <p align="center">
+    <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/rps-title.png">
+  </p>
+  
+  <br/>
+  
+  * Play against a computer controlled opponent. Keep track of your score and see if you can beat the AI.<br/>
+    <p align="center">
+    <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/RPS-desktop.png">
+    <img width="250" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/RPS-mobile.png">
+    </p>
+    <p align="center"> • Desktop, Mobile</p>
+
   
   **- Tic-Tac-Toe:** 
   * Two player tic tac toe game. Ability to go back to previous moves or start a new game.
