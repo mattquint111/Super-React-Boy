@@ -13,36 +13,75 @@ This app was inspired by the first generation 8-bit Game Boy console with they s
 <p align="center"> • Desktop, Mobile</p>
 
 
-
+***
 ## Games
   
   <p align="center">
-    <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/rps-title.png">
+    <img width="650" height="350" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/rps-title.png">
   </p>
   
   <br/>
   
   * Play against a computer controlled opponent. Keep track of your score and see if you can beat the AI.<br/>
+  
     <p align="center">
     <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/RPS-desktop.png">
     <img width="250" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/RPS-mobile.png">
     </p>
     <p align="center"> • Desktop, Mobile</p>
 
+  ***
+  <p align="center">
+    <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/ttt-title.png">
+  </p>
   
-  **- Tic-Tac-Toe:** 
-  * Two player tic tac toe game. Ability to go back to previous moves or start a new game.
+  <br/>
   
-  **- Snake:** 
-  * 2d snake game. Choose your difficulty level with harder difficulties rewarding more points. Scores are saved to a database built with Node.js and PostgreSQL. See if you can make it in the top five which are displayed on a high scores table.
+  * Two player tic tac toe game. 
+  * Ability to start a new game or go back to previous moves.<br/>
   
-  **- Hangman:** 
-  * Pick letters to try and guess the word. Words are pulled from a web API so there's always new words to try and guess.
+  <p align="center">
+    <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/ttt-desktop.png">
+    <img width="250" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/ttt-mobile.png">
+    </p>
+    <p align="center"> • Desktop, Mobile</p>
+  
+  ***
+  <p align="center">
+    <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/snake-title.png">
+  </p>
+  
+  <br/>
+  
+  * 2d snake game. 
+  * Choose your difficulty level with harder difficulties rewarding more points. 
+  * Scores are saved to a database built with Node.js and PostgreSQL. See if you can make it in the top five which are displayed on a high scores table.<br/>
+  
+  <p align="center">
+    <img width="650" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/snake-desktop.png">
+    </p>
+  
+  ***
+  <p align="center">
+    <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/hangman-title.png">
+  </p>
+  
+  <br/>
+  
+  * Pick letters to try and guess the hidden word. 
+  * Words are pulled from a web API so there's always new words to try and guess.
+  
+  <p align="center">
+    <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/hangman1.png">
+    <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/hangman2.png">
+    </p>
+  
+  
  
 
 
 ## Built With
-* JavaScript, Node.js, Express, Sequelize, HTML, CSS, Mustache, PostgreSQL
+* React, Node.js, Express, Sequelize, PostgreSQL, HTML, CSS
 
 
 <!-- GETTING STARTED -->
@@ -60,11 +99,15 @@ npm init
 
 1. Clone to local machine
 ```sh
-git clone https://https://github.com/mattquint111/CHALK-UP
+git clone https://github.com/mattquint111/Super-React-Boy
 ```
 2. Install NPM packages
 ```sh
-npm install bcrypt body-parser express express-session mustache-express sequelize
+npm install 
+```
+3. Start program
+```sh
+npm start
 ```
 
 <!-- CONTRIBUTING -->
@@ -86,7 +129,7 @@ Either provide a [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contri
 
 **Matthew Quint** - www.linkedin.com/in/matt-quint - email: mattquint111@gmail.com 
 
-Project Link: [https://https://github.com/mattquint111/CHALK-UP](https://https://github.com/mattquint111/CHALK-UP)
+Project Link: [https://github.com/mattquint111/Super-React-Boy
 
 
 
