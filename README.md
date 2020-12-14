@@ -4,7 +4,7 @@ Super React Boy is video game emulator built entirely in React.js. It features b
 
 
 ## Inspiration
-This app was inspired by the first generation 8-bit Game Boy console with they style designed to emulate the feel of the Game Boy's green dot matrix screen. The games that you want to play over and over don't always need the most advanced graphics just a fun concept with simple controls. Like all good video games this app contains easter eggs on each page, see if you can find all the secret kiwis.
+This app was inspired by the first generation 8-bit Game Boy console with the style designed to emulate the feel of the Game Boy's green dot matrix screen. The games that you want to play over and over don't always need the most advanced graphics just a fun concept with simple controls. Like all good video games this app contains easter eggs on each page, see if you can find all the secret kiwis.
 
 <p align="center">
   <img width="500" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/Screen%20Shot%202020-12-12%20at%2010.08.47%20AM.png">
