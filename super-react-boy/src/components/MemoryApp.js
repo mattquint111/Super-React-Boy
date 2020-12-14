@@ -7,7 +7,7 @@ import initializeDeck from './memoryComponents/deck'
 function MemoryApp() {
   const [cards, setCards] = useState([])
   const [flipped, setFlipped] = useState([])
-  const [dimension, setDimension] = useState(400);
+  const [dimension, setDimension] = useState(300);
   const [solved, setSolved] = useState([]);
   const [disabled, setDisabled] = useState(false);
   const [score, setScore] = useState(0);
@@ -119,7 +119,7 @@ function MemoryApp() {
 
   return (
     <div 
-      className="app"
+      className="memory-cont"
       style={{
         textAlign: "center"
       }}
@@ -132,7 +132,7 @@ function MemoryApp() {
         newGame={newGame}
       />
       <Board 
-        dimension={dimension}
+        // dimension={dimension}
         cards={cards}
         flipped={flipped}
         handleClick={handleClick}

@@ -21,6 +21,7 @@ export default function Card({
         onClick={()=> disabled ? null : handleClick(id)}
         >
         <div className="flipper">
+            
             <img
                 style={{
                     height, width
@@ -29,6 +30,7 @@ export default function Card({
                 src={flipped || solved ? `/img/${type}.png` : '/img/back.png' }
                 alt={type}
             />
+            {/* <i class="back fas fa-question"></i> */}
         </div>
     </div>
 }

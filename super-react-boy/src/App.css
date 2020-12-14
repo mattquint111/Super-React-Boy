@@ -979,6 +979,11 @@ tttTitle {
   transform: translateY(-50px);
 }
 
+.memory-cont {
+ height: 100%;
+ width: 100%;
+}
+
 
 /* ============MOBILE============ */
 @media (max-width: 425px) {

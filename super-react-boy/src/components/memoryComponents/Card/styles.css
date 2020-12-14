@@ -1,8 +1,10 @@
 .flip-container {
     perspective: 1000px;
     display: inline-block;
-    border: 1px solid white;
-    background: black;
+    border: 3px solid#676516;
+    background: #bdae58;
+    color: #676516;
+    margin: 1px;
   }
   
   .flip-container.flipped .flipper {
