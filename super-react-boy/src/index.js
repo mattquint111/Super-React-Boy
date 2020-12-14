@@ -12,6 +12,7 @@ import TicTacToeApp from './components/TicTacToeApp';
 import SnakeHome from './components/SnakeHome'
 import SnakeApp from './components/SnakeApp'
 import HangmanApp from './components/HangmanApp'
+import MemoryApp from './components/MemoryApp'
 
 
 ReactDOM.render(
@@ -27,6 +28,7 @@ ReactDOM.render(
           <Route component = {SnakeHome} path='/snake-home' />
           <Route component = {SnakeApp} path="/snake/:player" />
           <Route component = {HangmanApp} path="/hangman" />
+          <Route component = {MemoryApp} path="/memory" />
         </Switch>
       </BaseLayout>
     </BrowserRouter>
