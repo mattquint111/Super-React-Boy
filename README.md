@@ -129,7 +129,7 @@ Either provide a [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contri
 
 **Matthew Quint** - www.linkedin.com/in/matt-quint - email: mattquint111@gmail.com 
 
-Project Link: [https://github.com/mattquint111/Super-React-Boy
+Project Link: https://github.com/mattquint111/Super-React-Boy
 
 
 
