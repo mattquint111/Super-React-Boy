@@ -15,7 +15,8 @@ This app was inspired by the first generation 8-bit Game Boy console with the st
 
 ***
 ## Games
-  
+
+  <!-- rock paper scissors -->
   <p align="center">
     <img width="650" height="350" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/rps-title.png">
   </p>
@@ -31,6 +32,8 @@ This app was inspired by the first generation 8-bit Game Boy console with the st
     <p align="center"> • Desktop, Mobile</p>
 
   ***
+  
+  <!-- tic tac toe -->
   <p align="center">
     <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/ttt-title.png">
   </p>
@@ -47,6 +50,8 @@ This app was inspired by the first generation 8-bit Game Boy console with the st
     <p align="center"> • Desktop, Mobile</p>
   
   ***
+  
+  <!-- snake -->
   <p align="center">
     <img width="600" height="300" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/snake-title.png">
   </p>
@@ -56,6 +61,7 @@ This app was inspired by the first generation 8-bit Game Boy console with the st
   * 2d snake game. 
   * Choose your difficulty level with harder difficulties rewarding more points. 
   * Scores are saved to a database built with Node.js and PostgreSQL. See if you can make it in the top five which are displayed on a high scores table.<br/>
+  * Snake high score server: https://github.com/mattquint111/Super-React-Boy-Server
   
   <p align="center">
     <img width="650" height="400" src="https://github.com/mattquint111/Super-React-Boy/blob/master/images/snake-desktop.png">
@@ -127,7 +133,7 @@ Either provide a [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contri
 <!-- CONTACT -->
 ## Contact
 
-**Matthew Quint** - www.linkedin.com/in/matt-quint - email: mattquint111@gmail.com 
+**Matthew Quint** - http://matthewquint.surge.sh/ - www.linkedin.com/in/matt-quint - email: mattquint111@gmail.com 
 
 Project Link: https://github.com/mattquint111/Super-React-Boy
 
