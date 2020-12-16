@@ -1,6 +1,6 @@
 ![Image of Title](https://github.com/mattquint111/Super-React-Boy/blob/master/images/Screen%20Shot%202020-12-12%20at%2010.08.35%20AM.png)
 
-Super React Boy is video game emulator built entirely in React.js. It features both single and multiplayer games and can be played both on desktop and mobile devices. The concept of this app is modular in nature so check back to see what new games are added.
+Super React Boy is video game emulator built entirely in React. It features both single and multiplayer games and can be played both on desktop and mobile devices. The concept of this app is modular in nature so check back to see what new games are added.
 
 
 ## Inspiration
